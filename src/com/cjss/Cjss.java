@@ -38,44 +38,59 @@ public class Cjss {
         bnft.add(bnft2);
         bnft.add(bnft3);
 
-        Employee employee1 = new Employee();
-        employee1.setEmployeeId("1111");
-        employee1.setEmployeeName("Vinay");
-        employee1.setSalary("37000");
-        employee1.setBenefitId(Arrays.asList(bnft1, bnft2, bnft3));
-        employee1.setLocationId(Arrays.asList(lcn1));
-        employee1.setDeptId(Arrays.asList(dept1));
+        // Using Constructor for Initialization
 
+        Employee employee1=new Employee("1111","Vinay","37000",Arrays.asList(bnft1,bnft2,bnft3),Arrays.asList(lcn1),Arrays.asList(dept1));
+        Employee employee2=new Employee("1112","Harish","34000",Arrays.asList(bnft1,bnft2),Arrays.asList(lcn3),Arrays.asList(dept2));
+        Employee employee3=new Employee("1113","Ram","35000",Arrays.asList(bnft1,bnft3),Arrays.asList(lcn2),Arrays.asList(dept3));
+        Employee employee4=new Employee("1114","Rudra","36000",Arrays.asList(bnft1,bnft2,bnft3),Arrays.asList(lcn2),Arrays.asList(dept4));
 
-        Employee employee2 = new Employee();
-        employee2.setEmployeeId("1112");
-        employee2.setEmployeeName("Harish");
-        employee2.setSalary("34000");
-        employee2.setBenefitId(Arrays.asList(bnft1, bnft2));
-        employee2.setLocationId(Arrays.asList(lcn3));
-        employee2.setDeptId(Arrays.asList(dept2));
-
-        Employee employee3 = new Employee();
-        employee3.setEmployeeId("1113");
-        employee3.setEmployeeName("Ram");
-        employee3.setSalary("35000");
-        employee3.setBenefitId(Arrays.asList(bnft3, bnft1));
-        employee3.setLocationId(Arrays.asList(lcn2));
-        employee3.setDeptId(Arrays.asList(dept3));
-
-        Employee employee4 = new Employee();
-        employee4.setEmployeeId("1114");
-        employee4.setEmployeeName("Rudra");
-        employee4.setSalary("36000");
-        employee4.setBenefitId(Arrays.asList(bnft3, bnft1, bnft2));
-        employee4.setLocationId(Arrays.asList(lcn2));
-        employee4.setDeptId(Arrays.asList(dept4));
-
-        List<Employee> employee = new ArrayList<>();
+        List<Employee> employee=new ArrayList<>();
         employee.add(employee1);
         employee.add(employee2);
         employee.add(employee3);
         employee.add(employee4);
+
+        /*using setter and getters for Employee class*/
+
+//        Employee employee1 = new Employee();
+//        employee1.setEmployeeId("1111");
+//        employee1.setEmployeeName("Vinay");
+//        employee1.setSalary("37000");
+//        employee1.setBenefitId(Arrays.asList(bnft1, bnft2, bnft3));
+//        employee1.setLocationId(Arrays.asList(lcn1));
+//        employee1.setDeptId(Arrays.asList(dept1));
+//
+//
+//        Employee employee2 = new Employee();
+//        employee2.setEmployeeId("1112");
+//        employee2.setEmployeeName("Harish");
+//        employee2.setSalary("34000");
+//        employee2.setBenefitId(Arrays.asList(bnft1, bnft2));
+//        employee2.setLocationId(Arrays.asList(lcn3));
+//        employee2.setDeptId(Arrays.asList(dept2));
+//
+//        Employee employee3 = new Employee();
+//        employee3.setEmployeeId("1113");
+//        employee3.setEmployeeName("Ram");
+//        employee3.setSalary("35000");
+//        employee3.setBenefitId(Arrays.asList(bnft3, bnft1));
+//        employee3.setLocationId(Arrays.asList(lcn2));
+//        employee3.setDeptId(Arrays.asList(dept3));
+//
+//        Employee employee4 = new Employee();
+//        employee4.setEmployeeId("1114");
+//        employee4.setEmployeeName("Rudra");
+//        employee4.setSalary("36000");
+//        employee4.setBenefitId(Arrays.asList(bnft3, bnft1, bnft2));
+//        employee4.setLocationId(Arrays.asList(lcn2));
+//        employee4.setDeptId(Arrays.asList(dept4));
+
+//        List<Employee> employee = new ArrayList<>();
+//        employee.add(employee1);
+//        employee.add(employee2);
+//        employee.add(employee3);
+//        employee.add(employee4);
 
         //Task-1 getting India Employees
 

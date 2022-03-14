@@ -11,15 +11,18 @@ public class Employee {
     private List<Department> deptId;
     private List<Benefits> benefitId;
 
-//    public Employee(String employeeId, String employeeName, String salary,
-//                    List<Location> locationId, List<Department> deptId, List<Benefits> benefitId) {
-//        this.employeeId = employeeId;
-//        this.employeeName = employeeName;
-//        this.Salary = salary;
-//        this.locationId = locationId;
-//        this.deptId = deptId;
-//        this.benefitId = benefitId;
-//    }
+    public Employee(String employeeId, String employeeName, String salary,
+                    List<Benefits> benefitId,List<Location> locationId, List<Department> deptId) {
+        this.employeeId = employeeId;
+        this.employeeName = employeeName;
+        this.Salary = salary;
+        this.locationId = locationId;
+        this.deptId = deptId;
+        this.benefitId = benefitId;
+    }
+    public Employee(){
+
+    }
 
     //Getter and setters
     
